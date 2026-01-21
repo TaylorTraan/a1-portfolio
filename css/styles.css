@@ -1,31 +1,81 @@
+:root {
+    --accent: #0d9488;
+    --accent-strong: #0f766e;
+    --text: #1f2937;
+    --muted: #4b5563;
+    --bg: #f6fbfa;
+    --border: #e5e7eb;
+}
+
 body {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     font-family: sans-serif;
     line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
 }
 
 main {
-    padding: 0px 24px;
+    padding: 0 24px 32px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 section {
     margin-bottom: 24px;
+    padding: 16px 18px;
+    background-color: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: var(--accent-strong);
+    margin-top: 0;
+}
+
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border);
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 8px 24px;
+    padding: 10px 24px;
     display: flex;
-    gap: 12px;
+    gap: 14px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--text);
+    font-weight: 600;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: var(--accent-strong);
+    text-decoration: underline;
+    outline: none;
+}
+
+nav a:active {
+    color: var(--accent);
+}
+
+a {
+    color: var(--accent-strong);
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--accent);
 }
 
 header, footer {
-    padding: 0px 24px;
+    padding: 16px 24px;
 }
