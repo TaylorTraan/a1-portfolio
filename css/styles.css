@@ -40,8 +40,10 @@ h1, h2, h3 {
     margin-top: 0;
 }
 
-#experience > h2,
-#projects > h2 {
+#experience > h1,
+#projects > h1,
+#experience article h2,
+#projects article h2 {
     margin: 0 0 12px;
 }
 
