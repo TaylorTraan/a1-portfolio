@@ -1,31 +1,144 @@
+:root {
+    --accent: #0d9488;
+    --accent-strong: #0f766e;
+    --text: #1f2937;
+    --muted: #4b5563;
+    --bg: #f6fbfa;
+    --border: #e5e7eb;
+}
+
 body {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     font-family: sans-serif;
     line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
 }
 
 main {
-    padding: 0px 24px;
+    padding: 24px 24px 32px;
+    max-width: 960px;
+    margin: 24px auto 0;
 }
 
 section {
     margin-bottom: 24px;
+    padding: 16px 18px;
+    background-color: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: var(--accent-strong);
+    margin-top: 0;
+}
+
+#experience > h2,
+#projects > h2 {
+    margin: 0 0 12px;
+}
+
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border);
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 8px 24px;
+    padding: 10px 24px;
     display: flex;
-    gap: 12px;
+    gap: 14px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--text);
+    font-weight: 600;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: var(--accent-strong);
+    text-decoration: underline;
+    outline: none;
+}
+
+nav a:active {
+    color: var(--accent);
+}
+
+a {
+    color: var(--accent-strong);
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--accent);
 }
 
 header, footer {
-    padding: 0px 24px;
+    padding: 16px 24px;
+}
+
+.header-simple {
+    max-width: 960px;
+    margin: 24px auto 12px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.header-simple img {
+    display: block;
+    margin: 10px auto 12px;
+    border-radius: 10px;
+}
+
+.header-photo {
+    /* Keeps the circle photo from getting too large */
+    max-width: 200px;
+}
+
+.header-simple address {
+    font-style: normal;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.project-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image-link {
+    display: block;
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border);
+}
+
+.project-body {
+    padding: 12px 14px 14px;
 }

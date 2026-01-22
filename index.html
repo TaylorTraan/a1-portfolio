@@ -11,6 +11,7 @@ EMAIL: taylott3@uci.edu
   <meta name="author" content="Taylor Tran">
   <meta name="description" content="Taylor Tran's portfolio">
    <!-- you would link to an external stylesheet here! -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
    <!-- you would also link to Bootstrap here! -->
   <title>Taylor Tran's Portfolio - Introduction</title>
@@ -24,15 +25,34 @@ EMAIL: taylott3@uci.edu
     </ul>
   </nav>
 
-  <header>
+  <header class="header-simple">
     <h1>Taylor Tran</h1>
-    <img src="images/profile_photo.png" alt="Headshot photo of Taylor Tran" width="286" height="189">
+    <img class="img-fluid rounded-circle shadow-sm header-photo" src="images/profile_photo.png" alt="Headshot photo of Taylor Tran" width="200" height="200">
     <address>
-      <p>Email: <a href="mailto:taylott3@uci.edu">taylott3@uci.edu</a></p>
-      <p>Phone: 714-273-0510</p>
-      <p>Location: Irvine, CA</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/taylortraan/" target="_blank" rel="noopener noreferrer">Taylor Tran's LinkedIn Profile</a></p>
-      <p>GitHub: <a href="https://github.com/taylortraan" target="_blank" rel="noopener noreferrer">Taylor Tran's GitHub Profile</a></p>
+      <table class="table table-sm table-borderless w-auto mx-auto mb-0">
+        <tbody>
+          <tr>
+            <th scope="row">Email</th>
+            <td><a href="mailto:taylott3@uci.edu">taylott3@uci.edu</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Phone</th>
+            <td>714-273-0510</td>
+          </tr>
+          <tr>
+            <th scope="row">Location</th>
+            <td>Irvine, CA</td>
+          </tr>
+          <tr>
+            <th scope="row">LinkedIn</th>
+            <td><a href="https://www.linkedin.com/in/taylortraan/" target="_blank" rel="noopener noreferrer">Taylor Tran's LinkedIn Profile</a></td>
+          </tr>
+          <tr>
+            <th scope="row">GitHub</th>
+            <td><a href="https://github.com/taylortraan" target="_blank" rel="noopener noreferrer">Taylor Tran's GitHub Profile</a></td>
+          </tr>
+        </tbody>
+      </table>
     </address>
   </header>
 
